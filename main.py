@@ -1,7 +1,7 @@
 import argparse
-from request_handler import send_request
-from wordlist_handler import read_wordlist
-from utils import parse_headers, parse_form_data
+from src.request_handler import send_request
+from src.wordlist_handler import read_wordlist
+from src.utils import parse_headers, parse_form_data
 
 def parse_args():
     parser = argparse.ArgumentParser()
