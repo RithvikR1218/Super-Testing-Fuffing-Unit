@@ -1,7 +1,8 @@
 def read_wordlist(path):
     try:
         with open(path, 'r') as file:
-            return file.read().splitlines()
+            # Read each line as a separate word, stripping any extra whitespace
+            return [line.strip() for line in file if line.strip()]
     except FileNotFoundError:
         print(f"Error: The file '{path}' was not found.")
         exit(1)
