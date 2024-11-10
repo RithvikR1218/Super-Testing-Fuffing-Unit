@@ -17,8 +17,8 @@ def main():
     args = parse_args()
 
     # Check if 'FUZZ' is in URL
-    if "FUZZ" not in args.url:
-        print("Error: 'FUZZ' keyword is not present in the URL.")
+    if "FUZZ" not in args.url and args.data is not None and "FUZZ" not in args.data:
+        print("Error: 'FUZZ' keyword is not present in the URL or form data.")
         exit(1)
 
     # Read wordlist from file
