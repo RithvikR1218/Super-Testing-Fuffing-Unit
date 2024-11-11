@@ -13,7 +13,7 @@ def parse_args():
     parser.add_argument("-d", "--data", help="Form data for POST request (e.g. key1=value1&key2=value2)")
     parser.add_argument("-H", "--headers", help="Custom headers for request (e.g. 'User-Agent: Mozilla/5.0')")
     parser.add_argument("-t", "--threads", type=int, default=4, help="Number of threads (Default is 4)")
-    parser.add_argument("-i", "--iterations", type=int, default=20, help="Number of mutation types (Default is 20)")
+    parser.add_argument("-i", "--iterations", type=int, default=5, help="Number of mutation types (Default is 5)")
     parser.add_argument("-m", "--mutations", type=int, default=0, help="Mutations per word (Default is 0)")
     parser.add_argument("-M", "--mutatedlist", type=int, default=0, help="Switch to mutated list as default word list")
     return parser.parse_args()
